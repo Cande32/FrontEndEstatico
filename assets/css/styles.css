@@ -1,0 +1,73 @@
+/*Estilo general */
+*  {
+    margin:0%;
+    padding: 0.2%;
+}
+body{
+    background-color: rgb(15, 15, 15);
+    color: rgb(235, 233, 231);
+}
+
+/*Estilo navbar */
+#redes{
+text-align: right;
+}
+
+li {
+    list-style-type: none;
+}
+
+.logoAP {
+    filter: invert();
+    position: relative;
+}
+
+.list-group-item  {
+border: none;
+color:black;
+
+}
+
+/*Estilo imagenes*/
+.img-fluid {
+    width: 150%;
+    border-radius: 10%;  
+}
+  
+.imgProyecto {
+      width: 150%;
+}
+
+/*Estilo botones modal*/
+.btn {
+    background-color:rgb(250, 247, 247);
+}
+
+/*Estilo fondo modal*/
+.modal-content {
+     background-color: #3e2424 ;  
+}
+
+/*Estilo barra de progresos*/
+.progress-bar {
+  background-color: rgb(141 63 12);
+}
+
+/*Estilo fondo seccion sobre mi*/
+#sobreMi{
+    background-color: #772504;
+    background-size: cover;
+}
+
+/*Estilo fondo seccion educacion*/
+#educacion{
+    background-color: #772504;
+    background-size: cover;
+}
+
+/*Estilo fondo seccion proyectos*/
+#proyectos{
+    background-color: #772504;
+    border-radius: 0.8%;
+}
+
