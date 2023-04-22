@@ -3,71 +3,119 @@
     margin:0%;
     padding: 0.2%;
 }
+
 body{
-    background-color: rgb(15, 15, 15);
-    color: rgb(235, 233, 231);
+    background-color: #0f0f0f;
+    color: #ebe9e7;
+    display:grid;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
 }
 
-/*Estilo navbar */
+
+/*Estilo logo */
+.logoAP {
+    filter: invert();
+     
+}
+
+/*Estilo redes */
 #redes{
-text-align: right;
+  text-align: right;
 }
 
 li {
-    list-style-type: none;
-}
-
-.logoAP {
-    filter: invert();
-    position: relative;
+list-style-type: none;
 }
 
 .list-group-item  {
-border: none;
-color:black;
-
+   border: none;
+   color:black;
 }
 
-/*Estilo imagenes*/
+
+/*Estilo imagen perfil*/
 .img-fluid {
     width: 150%;
     border-radius: 10%;  
 }
-  
-.imgProyecto {
-      width: 150%;
-}
+
 
 /*Estilo botones modal*/
 .btn {
     background-color:rgb(250, 247, 247);
 }
 
+
 /*Estilo fondo modal*/
 .modal-content {
-     background-color: #3e2424 ;  
+     background-color: #5d1804;  
 }
+
 
 /*Estilo barra de progresos*/
 .progress-bar {
-  background-color: rgb(141 63 12);
+    background-color: #5d1804;
 }
+
 
 /*Estilo fondo seccion sobre mi*/
 #sobreMi{
-    background-color: #772504;
+    background-color:#5d1804;
     background-size: cover;
+    border-style: solid;
+    color: black;    
 }
+
 
 /*Estilo fondo seccion educacion*/
 #educacion{
-    background-color: #772504;
+    background-color: #5d1804;
     background-size: cover;
 }
 
+
+/*Estilo imagen proyecto*/
+.imgProyecto {
+    width: 150%;
+}
+
+
 /*Estilo fondo seccion proyectos*/
 #proyectos{
-    background-color: #772504;
+    background-color: #5d1804;
     border-radius: 0.8%;
+    text-align: center;
+    border-style: solid;
+    color: black;
+
+}
+
+/*Estilo titulos en h2*/
+h2 {
+   border-style: solid; 
+   width: 200px;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   line-height: 1.4;
+   margin-top: 2%;  
+}
+
+/*Estilo titulos en h*/
+h1{
+    background-color:rgb(255, 255, 255,0.2);
+    background-size: cover;
+    border-style: solid;
+    color: black;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    width: auto; 
+    height: auto;
+    font-family: monospace;
+    line-height: 1.4;
+        
 }
 
