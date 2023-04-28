@@ -13,7 +13,7 @@
 <body>
 
   <!-- Seccion header--> 
-  
+  <header> 
   <!--Seccion navbar-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -46,7 +46,7 @@
   <!-- Boton login -->
          <button type="button" id="loginButton" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="fa-solid fa-lock fa-xl"></i>
           </button>   
-         <button type="button" class="btn btn-light"><i class="fa-solid fa-lock-open fa-xl"></i> 
+         <button type="button" id="logoutButton" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#logoutModal"><i class="fa-solid fa-lock-open fa-xl"></i> 
           </button>
      </ul>  
    </div>
@@ -58,7 +58,6 @@
    
   
   <!-- Seccion banner-->
-  <header>
     <section> 
      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -100,7 +99,7 @@
     <!-- Boton editar sobre mi -->
          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editarSobreMiModal"><i class="fa-sharp fa-solid fa-pen"></i>
           </button>
-         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#eliminarSobreMiModal"><i class="fa-solid fa-trash-can"></i>
+         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#eliminarImgPerfilModal"><i class="fa-solid fa-trash-can"></i>
           </button>
   </section>
   <!--Fin seccion sobre mi-->
@@ -495,10 +494,10 @@
               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#eliminarHabilidadModal"><i class="fa-solid fa-trash-can"></i>
                </button>  
      </div>     
-    </div>
+    </div>  
    </div>
            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#agregarHabilidadModal"><i class="fa-solid fa-plus"></i>
-          </button>
+          </button>       
   </div>
   </section>
   <!--Fin seccion habilidades-->
@@ -571,10 +570,27 @@
             <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
             <button type="button" class="btn">Ingresar</button>
           </div>
-       
         </div>
     </div>
   </div> 
+<!--Modal logout-->
+<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Cerrar sesion?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn">Cerrar Sesion</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   
   <!-- Modal contacto -->
   <div class="modal fade" id="contactoModal" tabindex="-1" aria-labelledby="contactoModalLabel" aria-hidden="true">
@@ -632,24 +648,20 @@
   </div> 
   <!-- Modal Eliminar Redes-->
   <div class="modal fade" id="eliminarRedesModal" tabindex="-1" aria-labelledby="eliminarRedesModal" aria-hidden="true">
-  <div class="modal-dialog">
-  <div class="modal-content text-center">
-    <div class="modal-header">
-      <h5 class="modal-title" id="eliminarRedesModal">Eliminar Red Social</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¿Eliminar Red Social?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn">Eliminar</button>
+        </div>
+      </div>
     </div>
-    <div class="modal-body">
-      <div class="mb-3">
-        <label for="exampleInputRedSocial" class="form-label">url</label>
-        <input type="url" placeholder="inserte url" id="exampleInputRedSocial">
-      </div>      
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
-      <button type="button" class="btn">Guardar</button>
-    </div>
-  </div>
-  </div>
   </div>
   <!-- Modal Agregar Redes-->
   <div class="modal fade" id="agregarRedesModal" tabindex="-1" aria-labelledby="agregarRedesModal" aria-hidden="true">
@@ -702,29 +714,21 @@
   </div>  
   <!-- Modal Eliminar Banner-->      
   <div class="modal fade" id="eliminarBannerModal" tabindex="-1" aria-labelledby="eliminarBannerModal" aria-hidden="true">
-   <div class="modal-dialog">
-    <div class="modal-content">
-     <div class="modal-header">
-            <h5 class="modal-title" id="eliminarBannerModal">Banner</h5>
-           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-     </div>
-    <div class="modal-body">
-    <div class="mb-3">
-       <label for="exampleInputBanner" class="form-label">Banner</label>
-      <input type="url" placeholder="inserte url imagen" id="exampleInputBanner">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¿Eliminar Banner?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn">Eliminar</button>
+        </div>
+      </div>
     </div>
-    <div class="mb-3">
-      <label for="exampleNombre" class="form-label">Nombre</label>
-      <textarea class="form-control" id="exampleNombre" rows="1"></textarea>
-    </div>
-    </div>
-     <div class="modal-footer">
-       <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
-       <button type="button" class="btn">Guardar</button>
-     </div>
-    </div>
-   </div>
-  </div>  
+  </div>
   
   
   <!-- Modal Editar Sobre Mi-->
@@ -753,30 +757,22 @@
       </div>
     </div>
   <!-- Modal Eliminar Sobre Mi-->
-  <div class="modal fade" id="eliminarSobreMiModal" tabindex="-1" aria-labelledby="eliminarSobreMiModal" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="eliminarSobreMiModal">Sobre Mi</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="mb-3">
-                <label for="exampleInputImgPerfil" class="form-label">Imagen</label>
-                <input type="url" placeholder="inserte url imagen" id="exampleInputImgPerfil">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlSobreMi" class="form-label">Descripcion</label>
-                <textarea class="form-control" id="exampleFormControlSobreMi" rows="3"></textarea>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn">Guardar</button>
-            </div>
-          </div>
+  <div class="modal fade" id="eliminarImgPerfilModal" tabindex="-1" aria-labelledby="eliminarImgPerfilModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          ¿Eliminar Imagen de Perfil?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn">Eliminar</button>
+        </div>
+      </div>
     </div>
+  </div>
   
   
   <!-- Modal Editar Experiencia-->
@@ -810,29 +806,17 @@
   </div>
   <!-- Modal Eliminar Experiencia-->
   <div class="modal fade" id="eliminarExperienciaModal" tabindex="-1" aria-labelledby="eliminarExperienciaModal" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="eliminarExperienciaModal">Eliminar Experiencia</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="mb-3">
-            <label for="exampleFormControlExperienciaPuesto" class="form-label">Puesto</label>
-            <textarea class="form-control" id="exampleFormControlExperienciaPuesto" rows="1"></textarea>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputFecha" class="form-label">Fecha</label>
-            <input type="date" class="form-control" id="exampleInputFecha">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlExperienciaDescripcion" class="form-label">Descripcion</label>
-            <textarea class="form-control" id="exampleFormControlExperienciaDescripcion" rows="3"></textarea>
-          </div>
+          ¿Eliminar Experiencia?
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn">Guardar</button>
+          <button type="button" class="btn" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn">Eliminar</button>
         </div>
       </div>
     </div>
@@ -898,33 +882,21 @@
       </div>
   </div> 
    <!-- Modal Eliminar Educacion-->
-  <div class="modal fade" id="eliminarEducacionModal" tabindex="-1" aria-labelledby="eliminarEducacionModal" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="eliminarEducacionModal">Eliminar Educacion</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="mb-3">
-              <label for="exampleFormControlEducacionInstitucion" class="form-label">Institucion</label>
-              <textarea class="form-control" id="exampleFormControlEducacionInstitucion" rows="1"></textarea>
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlEducacionFecha" class="form-label">Fecha</label>
-              <textarea class="form-control" id="exampleFormControlEducacionFecha" rows="1"></textarea>
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlEducacionDescripcion" class="form-label">Descripcion</label>
-              <textarea class="form-control" id="exampleFormControlEducacionDescripcion" rows="3"></textarea>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn">Guardar</button>
-          </div>
+   <div class="modal fade" id="eliminarEducacionModal" tabindex="-1" aria-labelledby="eliminarEducacionModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¿Eliminar Educacion?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn">Eliminar</button>
         </div>
       </div>
+    </div>
   </div>
   <!-- Modal Agregar Educacion-->
   <div class="modal fade" id="agregarEducacionModal" tabindex="-1" aria-labelledby="agregarEducacionModal" aria-hidden="true">
@@ -988,22 +960,14 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="eliminarHabilidadModal">Eliminar Habilidades</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="mb-3">
-            <label for="exampleFormControlHabilidadNombre" class="form-label">Nombre Habilidad</label>
-            <textarea class="form-control" id="exampleFormControlHabilidadNombre" rows="1"></textarea>
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlHabilidadPorcentaje" class="form-label">Porcentaje</label>
-            <textarea class="form-control" id="exampleFormControlHabilidadPorcentaje" rows="1"></textarea>
-          </div>    
+          ¿Eliminar Habilidad?
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn">Guardar</button>
+          <button type="button" class="btn" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn">Eliminar</button>
         </div>
       </div>
     </div>
@@ -1060,30 +1024,22 @@
       </div>
     </div>
   </div>    
-  <!-- Modal Eliminar Proyectos-->      
+  <!-- Modal Eliminar Proyectos--> 
   <div class="modal fade" id="eliminarProyectosModal" tabindex="-1" aria-labelledby="eliminarProyectosModal" aria-hidden="true">
-   <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-     <div class="modal-header">
-          <h5 class="modal-title" id="eliminarProyectosModal">Eliminar Proyecto</h5>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-     </div>
-    <div class="modal-body">
-      <div class="mb-3">
-         <label for="exampleFormControlProyectoDescripcion" class="form-label">Descripcion</label>
-         <textarea class="form-control" id="exampleFormControlProyectoDescripcion" rows="3"></textarea>
-     </div>
-    <div class="mb-3">
-        <label for="exampleInputImgProyecto" class="form-label">Imagen</label>
-        <input type="url" placeholder="inserte url imagen" id="exampleInpuImgProyecto">
-     </div>
+        </div>
+        <div class="modal-body">
+          ¿Eliminar Proyecto?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn">Eliminar</button>
+        </div>
+      </div>
     </div>
-     <div class="modal-footer">
-        <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn">Guardar</button>
-     </div>
-    </div>
-   </div>
   </div>
   <!-- Modal Agregar Proyectos-->  
   <div class="modal fade" id="agregarProyectosModal" tabindex="-1" aria-labelledby="agregarProyectosModal" aria-hidden="true">

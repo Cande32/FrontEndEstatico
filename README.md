@@ -35,3 +35,7 @@
 #Subir todo de nuevo
 
 #Ver tema modales
+
+#En seccion Banner y Sobre Mi dejo modal de Edicion y el mmodal de Eliminar solamente para las imagenes porque el contenido no puede quedar vacio
+
+04/23 Corregidos los modales vuelvo a subir maqueta estatica
